@@ -1,4 +1,9 @@
-! testnet clone 
+# bootnode generate script build done
+/// enode bootnode-enode.txt에 저장 > save "enode" to peer(node)
+
+# node 생성
+/// Validator
+/// beacon?
 
 # node는 각각 생성
 # 각 node 별 console 실행 sh 생성, port 저장 및 enode 저장
