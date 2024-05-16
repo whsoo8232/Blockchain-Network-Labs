@@ -28,8 +28,8 @@ PRYSM_VALIDATOR_MONITORING_PORT=7200
 
 # Set Paths for your binaries. Configure as you wish, particularly
 # if you're developing on a local fork of geth/prysm
-GETH_BINARY=./dependencies/go-ethereum_v1.13.12/build/bin/geth
-GETH_BOOTNODE_BINARY=./dependencies/go-ethereum_v1.13.12/build/bin/bootnode
+GETH_BINARY=./dependencies/go-ethereum/build/bin/geth
+GETH_BOOTNODE_BINARY=./dependencies/go-ethereum/build/bin/bootnode
 
 PRYSM_CTL_BINARY=./dependencies/prysm_v4.2.1/bazel-bin/cmd/prysmctl/prysmctl_/prysmctl
 PRYSM_BEACON_BINARY=./dependencies/prysm_v4.2.1/bazel-bin/cmd/beacon-chain/beacon-chain_/beacon-chain

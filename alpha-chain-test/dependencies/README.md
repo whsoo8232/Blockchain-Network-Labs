@@ -1,3 +1,3 @@
 require git
 
-go-ethereum_v1.13.12: ""
+go-ethereum, v1.13.12: "https://github.com/ethereum/go-ethereum.git"
