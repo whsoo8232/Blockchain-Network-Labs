@@ -1,0 +1,115 @@
+time="2024-04-29 15:08:27" level=info msg="Finished reading JWT secret from ./network/node-1/execution/jwtsecret" prefix=execution
+time="2024-04-29 15:08:27" level=warning msg="Running on custom Ethereum network specified in a chain configuration yaml file" prefix=flags
+time="2024-04-29 15:08:27" level=warning msg="Enabled feature flag" prefix=flags slasher="Enables a slasher in the beacon node for detecting slashable offenses."
+time="2024-04-29 15:08:27" level=warning msg="Fee recipient 0x123463a4b065722e99115d6c222f267d9cabb524 is not a checksum Ethereum address. The checksummed address is 0x123463a4B065722E99115D6c222f267d9cABb524 and will be used as the fee recipient. We recommend using a mixed-case address (checksum) to prevent spelling mistakes in your fee recipient Ethereum address" prefix=node
+time="2024-04-29 15:08:27" level=info msg="Default fee recipient is set to 0x123463a4B065722E99115D6c222f267d9cABb524, recipient may be overwritten from validator client and persist in db. Default fee recipient will be used as a fall back" prefix=node
+time="2024-04-29 15:08:27" level=info msg="Checking DB" databasePath="network/node-1/consensus/beacondata/beaconchaindata" prefix=node
+time="2024-04-29 15:08:27" level=info msg="Opening Bolt DB" path="network/node-1/consensus/beacondata/beaconchaindata/beaconchain.db" prefix=db
+time="2024-04-29 15:08:27" level=warning msg="Removing database" prefix=node
+time="2024-04-29 15:08:27" level=info msg="Opening Bolt DB" path="network/node-1/consensus/beacondata/beaconchaindata/beaconchain.db" prefix=db
+time="2024-04-29 15:08:27" level=info msg="Loading genesis state from disk." hash=0xc140b85954bb007dc60ceffd0753496a3b470323ba2c05f4ab75f4e09dae8126 prefix=genesis
+time="2024-04-29 15:08:27" level=info msg="Deposit contract" address=0x4242424242424242424242424242424242424242 prefix=node
+time="2024-04-29 15:08:27" level=info msg="Blob filesystem cache warm-up complete." elapsed=184.857µs prefix=filesystem
+time="2024-04-29 15:08:27" level=info msg="Checking DB" databasePath="network/node-1/consensus/beacondata/beaconchaindata" prefix=node
+time="2024-04-29 15:08:27" level=warning msg="Removing database" prefix=node
+time="2024-04-29 15:08:27" level=info msg="Running node with" peerId=16Uiu2HAm9y5oS838RaXRUXd3U6t7bxfJZQcFdL8cweKZMyCER9d7 prefix=p2p
+time="2024-04-29 15:08:27" level=info msg="gRPC server listening on port" address="127.0.0.1:4001" prefix=rpc
+time="2024-04-29 15:08:27" level=warning msg="You are using an insecure gRPC server. If you are running your beacon node and validator on the same machines, you can ignore this message. If you want to know how to enable secure connections, see: https://docs.prylabs.network/docs/prysm-usage/secure-grpc" prefix=rpc
+time="2024-04-29 15:08:27" level=info msg="Enabled debug gRPC endpoints" prefix=rpc
+time="2024-04-29 15:08:27" level=info msg="Starting beacon node" prefix=node version="Prysm/Unknown/Local build. Built at: Moments ago"
+time="2024-04-29 15:08:27" level=info msg="Backfill service not enabled" prefix=backfill
+time="2024-04-29 15:08:27" level=info msg="Blockchain data already exists in DB, initializing..." prefix=blockchain
+time="2024-04-29 15:08:27" level=info msg="Waiting for state to be initialized" prefix=initial-sync
+time="2024-04-29 15:08:27" level=info msg="Starting gRPC gateway" address="127.0.0.1:4101" prefix=gateway
+time="2024-04-29 15:08:27" level=error msg="Could not connect to execution endpoint" error="wanted chain ID 6832, got 6382: wanted chain ID 6832, got 6382" prefix=execution
+time="2024-04-29 15:08:27" level=info msg="Received state initialized event" prefix=initial-sync
+time="2024-04-29 15:08:27" level=info msg="Chain started within the last epoch - not syncing" genesisTime=2024-04-29 15:08:07 +0900 KST prefix=initial-sync
+time="2024-04-29 15:08:27" level=info msg="Slasher received chain initialization event" genesisTime=2024-04-29 15:08:07 +0900 KST prefix=slasher
+time="2024-04-29 15:08:27" level=info msg="Completed chain sync, starting slashing detection" prefix=slasher
+time="2024-04-29 15:08:27" level=info msg="Reading last epoch written for each validator..." prefix=slasher
+time="2024-04-29 15:08:27" level=info msg="Finished retrieving last epoch written per validator" elapsed=19.651µs prefix=slasher
+time="2024-04-29 15:08:27" level=info msg="Started discovery v5" ENR="enr:-MK4QKZisrMEY2x6I-Y9hYXR93zn-_UGdCMAnv_BOwwdQruFbyxIBBJn77SoTHKV2DZ7XWjiyCQycTW2a0S6apWPPAOGAY8oeAy5h2F0dG5ldHOIAAAAAAAAAACEZXRoMpB-Ysp0IAAAk___________gmlkgnY0gmlwhKweATuJc2VjcDI1NmsxoQLYD46WHG6YSNOuWgAztEJgFwIuInoZRGot3gZnFMrUvohzeW5jbmV0cwCDdGNwghBpg3VkcIIQzQ" prefix=p2p
+time="2024-04-29 15:08:27" level=info msg="Node started p2p server" multiAddr="/ip4/172.30.1.59/tcp/4201/p2p/16Uiu2HAm9y5oS838RaXRUXd3U6t7bxfJZQcFdL8cweKZMyCER9d7" prefix=p2p
+time="2024-04-29 15:08:27" level=info msg="Subscribed to" prefix=sync topic="/eth2/7e62ca74/beacon_block/ssz_snappy"
+time="2024-04-29 15:08:27" level=info msg="Subscribed to" prefix=sync topic="/eth2/7e62ca74/beacon_aggregate_and_proof/ssz_snappy"
+time="2024-04-29 15:08:27" level=info msg="Subscribed to" prefix=sync topic="/eth2/7e62ca74/voluntary_exit/ssz_snappy"
+time="2024-04-29 15:08:27" level=info msg="Subscribed to" prefix=sync topic="/eth2/7e62ca74/proposer_slashing/ssz_snappy"
+time="2024-04-29 15:08:27" level=info msg="Subscribed to" prefix=sync topic="/eth2/7e62ca74/attester_slashing/ssz_snappy"
+time="2024-04-29 15:08:27" level=warning msg="Subnet weight is 0, skipping initializing topic scoring" prefix=p2p
+time="2024-04-29 15:08:27" level=info msg="Subscribed to" prefix=sync topic="/eth2/7e62ca74/sync_committee_contribution_and_proof/ssz_snappy"
+time="2024-04-29 15:08:27" level=info msg="Subscribed to" prefix=sync topic="/eth2/7e62ca74/bls_to_execution_change/ssz_snappy"
+time="2024-04-29 15:08:27" level=info msg="Subscribed to" prefix=sync topic="/eth2/7e62ca74/blob_sidecar_0/ssz_snappy"
+time="2024-04-29 15:08:27" level=info msg="Subscribed to" prefix=sync topic="/eth2/7e62ca74/blob_sidecar_1/ssz_snappy"
+time="2024-04-29 15:08:27" level=info msg="Subscribed to" prefix=sync topic="/eth2/7e62ca74/blob_sidecar_2/ssz_snappy"
+time="2024-04-29 15:08:27" level=info msg="Subscribed to" prefix=sync topic="/eth2/7e62ca74/blob_sidecar_3/ssz_snappy"
+time="2024-04-29 15:08:27" level=info msg="Subscribed to" prefix=sync topic="/eth2/7e62ca74/blob_sidecar_4/ssz_snappy"
+time="2024-04-29 15:08:27" level=info msg="Subscribed to" prefix=sync topic="/eth2/7e62ca74/blob_sidecar_5/ssz_snappy"
+time="2024-04-29 15:08:28" level=info msg="gRPC client connected to beacon node" addr="127.0.0.1:34742" prefix=rpc
+time="2024-04-29 15:08:28" level=info msg="Updated fee recipient addresses for validator indices" prefix="rpc/validator" validatorCount=1
+time="2024-04-29 15:08:31" level=info msg="Processing queued blocks for slashing detection" currentEpoch=0 currentSlot=2 numBlocks=0 prefix=slasher
+time="2024-04-29 15:08:31" level=warning msg="Subnet weight is 0, skipping initializing topic scoring" prefix=p2p
+time="2024-04-29 15:08:31" level=info msg="Start processing queued attestations" attsQueueSize=0 currentEpoch=0 currentSlot=2 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=0 prefix=slasher
+time="2024-04-29 15:08:31" level=info msg="Done processing queued attestations" elapsed=7.226µs prefix=slasher
+time="2024-04-29 15:08:31" level=warning msg="Subnet weight is 0, skipping initializing topic scoring" prefix=p2p
+time="2024-04-29 15:08:31" level=info msg="Subscribed to" prefix=sync topic="/eth2/7e62ca74/sync_committee_0/ssz_snappy"
+time="2024-04-29 15:08:31" level=info msg="Subscribed to" prefix=sync topic="/eth2/7e62ca74/beacon_attestation_0/ssz_snappy"
+time="2024-04-29 15:08:31" level=warning msg="Subnet weight is 0, skipping initializing topic scoring" prefix=p2p
+time="2024-04-29 15:08:31" level=warning msg="Subnet weight is 0, skipping initializing topic scoring" prefix=p2p
+time="2024-04-29 15:08:31" level=info msg="Subscribed to" prefix=sync topic="/eth2/7e62ca74/beacon_attestation_1/ssz_snappy"
+time="2024-04-29 15:08:31" level=info msg="Subscribed to" prefix=sync topic="/eth2/7e62ca74/sync_committee_1/ssz_snappy"
+time="2024-04-29 15:08:31" level=warning msg="Subnet weight is 0, skipping initializing topic scoring" prefix=p2p
+time="2024-04-29 15:08:31" level=warning msg="Subnet weight is 0, skipping initializing topic scoring" prefix=p2p
+time="2024-04-29 15:08:31" level=info msg="Subscribed to" prefix=sync topic="/eth2/7e62ca74/beacon_attestation_3/ssz_snappy"
+time="2024-04-29 15:08:31" level=info msg="Subscribed to" prefix=sync topic="/eth2/7e62ca74/sync_committee_2/ssz_snappy"
+time="2024-04-29 15:08:31" level=warning msg="Subnet weight is 0, skipping initializing topic scoring" prefix=p2p
+time="2024-04-29 15:08:31" level=info msg="Subscribed to" prefix=sync topic="/eth2/7e62ca74/sync_committee_3/ssz_snappy"
+time="2024-04-29 15:08:35" level=info msg="Synced new block" block=0x3724f7eb... epoch=0 finalizedEpoch=0 finalizedRoot=0x00000000... prefix=blockchain slot=1
+time="2024-04-29 15:08:35" level=info msg="Finished applying state transition" payloadHash=0x3bc896c2a0e5 prefix=blockchain slot=1 syncBitsCount=43 txCount=0
+time="2024-04-29 15:08:35" level=info msg="Synced new block" block=0x0c11f2d3... epoch=0 finalizedEpoch=0 finalizedRoot=0x00000000... prefix=blockchain slot=2
+time="2024-04-29 15:08:35" level=info msg="Finished applying state transition" attestations=1 payloadHash=0xe02a4d6c4cf0 prefix=blockchain slot=2 syncBitsCount=0 txCount=0
+time="2024-04-29 15:08:43" level=info msg="Processing queued blocks for slashing detection" currentEpoch=0 currentSlot=3 numBlocks=1 prefix=slasher
+time="2024-04-29 15:08:43" level=info msg="Start processing queued attestations" attsQueueSize=0 currentEpoch=0 currentSlot=3 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2024-04-29 15:08:43" level=info msg="Done processing queued attestations" elapsed=12.06898ms prefix=slasher
+time="2024-04-29 15:08:43" level=info msg="Chain reorg occurred" commonAncestorRoot=0x0349ca4519fbe3f4388217efe692b531fde79f49c57faa7e783de40e1deb5be5 depth=3 distance=5 newRoot=0xc932e4dc8dd1d33a1d8bb9770d3fe0b0bcc19280b30a5a7dbf1e55d4c97ee90e newSlot=3 newWeight=6400000000 oldRoot=0x0c11f2d327f890ebca6f8a8e662d264d41040135e239749666472ecc16906b6b oldSlot=2 oldWeight=0 prefix=blockchain
+time="2024-04-29 15:08:43" level=info msg="Synced new block" block=0xc932e4dc... epoch=0 finalizedEpoch=0 finalizedRoot=0x00000000... prefix=blockchain slot=3
+time="2024-04-29 15:08:43" level=info msg="Finished applying state transition" payloadHash=0x8df9b559d620 prefix=blockchain slot=3 syncBitsCount=0 txCount=0
+time="2024-04-29 15:08:43" level=info msg="Forkchoice updated with payload attributes for proposal" blockRoot=0xc932e4dc8dd1 headSlot=3 payloadID=0x038b82b38344 prefix=blockchain
+time="2024-04-29 15:08:55" level=info msg="Processing queued blocks for slashing detection" currentEpoch=0 currentSlot=4 numBlocks=1 prefix=slasher
+time="2024-04-29 15:08:55" level=info msg="Start processing queued attestations" attsQueueSize=0 currentEpoch=0 currentSlot=4 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=0 prefix=slasher
+time="2024-04-29 15:08:55" level=info msg="Done processing queued attestations" elapsed=25.984µs prefix=slasher
+time="2024-04-29 15:08:55" level=info msg="Begin building block" prefix="rpc/validator" sinceSlotStartTime=84.565546ms slot=4
+time="2024-04-29 15:08:55" level=warning msg="Beacon Node is no longer connected to an ETH1 chain, so ETH1 data votes are now mocked." prefix="rpc/validator"
+time="2024-04-29 15:08:55" level=info msg="Finished building block" prefix="rpc/validator" sinceSlotStartTime=88.217268ms slot=4 validator=1
+time="2024-04-29 15:08:55" level=info msg="Synced new block" block=0x2c3d6fdf... epoch=0 finalizedEpoch=0 finalizedRoot=0x00000000... prefix=blockchain slot=4
+time="2024-04-29 15:08:55" level=info msg="Finished applying state transition" attestations=1 payloadHash=0xd79a8a7810ee prefix=blockchain slot=4 syncBitsCount=256 txCount=0
+time="2024-04-29 15:09:07" level=info msg="Processing queued blocks for slashing detection" currentEpoch=0 currentSlot=5 numBlocks=0 prefix=slasher
+time="2024-04-29 15:09:07" level=info msg="Start processing queued attestations" attsQueueSize=0 currentEpoch=0 currentSlot=5 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2024-04-29 15:09:07" level=info msg="Done processing queued attestations" elapsed=20.368832ms prefix=slasher
+time="2024-04-29 15:09:07" level=info msg="Synced new block" block=0xe0d8602f... epoch=0 finalizedEpoch=0 finalizedRoot=0x00000000... prefix=blockchain slot=5
+time="2024-04-29 15:09:07" level=info msg="Finished applying state transition" payloadHash=0x4b0599452842 prefix=blockchain slot=5 syncBitsCount=128 txCount=0
+time="2024-04-29 15:09:19" level=info msg="Processing queued blocks for slashing detection" currentEpoch=1 currentSlot=6 numBlocks=1 prefix=slasher
+time="2024-04-29 15:09:19" level=warning msg="Subnet weight is 0, skipping initializing topic scoring" prefix=p2p
+time="2024-04-29 15:09:19" level=info msg="Start processing queued attestations" attsQueueSize=0 currentEpoch=1 currentSlot=6 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=0 prefix=slasher
+time="2024-04-29 15:09:19" level=info msg="Subscribed to" prefix=sync topic="/eth2/7e62ca74/beacon_attestation_3/ssz_snappy"
+time="2024-04-29 15:09:19" level=info msg="Done processing queued attestations" elapsed=26.519µs prefix=slasher
+time="2024-04-29 15:09:19" level=error msg="could not process new slot" error="0x0000000000000000000000000000000000000000000000000000000000000000: unknown finalized root" prefix=blockchain
+time="2024-04-29 15:09:19" level=info msg="Updated fee recipient addresses for validator indices" prefix="rpc/validator" validatorCount=1
+time="2024-04-29 15:09:19" level=info msg="Synced new block" block=0x1660f5f2... epoch=1 finalizedEpoch=0 finalizedRoot=0x00000000... prefix=blockchain slot=6
+time="2024-04-29 15:09:19" level=info msg="Finished applying state transition" attestations=1 payloadHash=0x196a654a5994 prefix=blockchain slot=6 syncBitsCount=0 txCount=0
+time="2024-04-29 15:09:19" level=info msg="Forkchoice updated with payload attributes for proposal" blockRoot=0x1660f5f296c9 headSlot=6 payloadID=0x03eb72112e31 prefix=blockchain
+time="2024-04-29 15:09:27" level=info msg="Connected peers" inboundTCP=0 outboundTCP=2 prefix=p2p total=2
+time="2024-04-29 15:09:31" level=info msg="Processing queued blocks for slashing detection" currentEpoch=1 currentSlot=7 numBlocks=1 prefix=slasher
+time="2024-04-29 15:09:31" level=info msg="Start processing queued attestations" attsQueueSize=0 currentEpoch=1 currentSlot=7 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2024-04-29 15:09:31" level=info msg="Done processing queued attestations" elapsed=50.784639ms prefix=slasher
+time="2024-04-29 15:09:31" level=info msg="Begin building block" prefix="rpc/validator" sinceSlotStartTime=83.377458ms slot=7
+time="2024-04-29 15:09:31" level=info msg="Finished building block" prefix="rpc/validator" sinceSlotStartTime=86.451364ms slot=7 validator=1
+time="2024-04-29 15:09:31" level=info msg="Synced new block" block=0x07280a4c... epoch=1 finalizedEpoch=0 finalizedRoot=0x00000000... prefix=blockchain slot=7
+time="2024-04-29 15:09:31" level=info msg="Finished applying state transition" payloadHash=0x14db8d96c34b prefix=blockchain slot=7 syncBitsCount=128 txCount=0
+time="2024-04-29 15:09:43" level=info msg="Processing queued blocks for slashing detection" currentEpoch=1 currentSlot=8 numBlocks=0 prefix=slasher
+time="2024-04-29 15:09:43" level=info msg="Start processing queued attestations" attsQueueSize=0 currentEpoch=1 currentSlot=8 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2024-04-29 15:09:43" level=info msg="Done processing queued attestations" elapsed=22.956283ms prefix=slasher
+time="2024-04-29 15:09:43" level=info msg="Synced new block" block=0x4cb9ad0a... epoch=1 finalizedEpoch=0 finalizedRoot=0x00000000... prefix=blockchain slot=8
+time="2024-04-29 15:09:43" level=info msg="Finished applying state transition" attestations=1 payloadHash=0xa9d40e873c3e prefix=blockchain slot=8 syncBitsCount=256 txCount=0
+time="2024-04-29 15:09:52" level=info msg="Got interrupt, shutting down..." prefix=node
+time="2024-04-29 15:09:52" level=info msg="Stopping beacon node" prefix=node
+time="2024-04-29 15:09:52" level=info msg="Flushing last epoch written for each validator to disk, please wait" prefix=slasher

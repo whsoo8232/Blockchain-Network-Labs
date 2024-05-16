@@ -1,0 +1,116 @@
+INFO [04-29|15:08:11.999] Maximum peer count                       ETH=50 total=50
+INFO [04-29|15:08:12.001] Set global gas cap                       cap=50,000,000
+INFO [04-29|15:08:12.002] Initializing the KZG library             backend=gokzg
+INFO [04-29|15:08:12.035] Allocated trie memory caches             clean=154.00MiB dirty=256.00MiB
+INFO [04-29|15:08:12.035] Using pebble as the backing database
+INFO [04-29|15:08:12.035] Allocated cache and file handles         database=/home/gnc/github/testnet/network/node-0/execution/geth/chaindata cache=512.00MiB handles=524,288
+INFO [04-29|15:08:12.185] Opened ancient database                  database=/home/gnc/github/testnet/network/node-0/execution/geth/chaindata/ancient/chain readonly=false
+INFO [04-29|15:08:12.185] State scheme set to already existing     scheme=path
+INFO [04-29|15:08:12.185] Initialising Ethereum protocol           network=6832 dbversion=<nil>
+INFO [04-29|15:08:12.193] Failed to load journal, discard it       err="journal not found"
+INFO [04-29|15:08:12.265] Opened ancient database                  database=/home/gnc/github/testnet/network/node-0/execution/geth/chaindata/ancient/state readonly=false
+INFO [04-29|15:08:12.265] 
+INFO [04-29|15:08:12.265] ---------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO [04-29|15:08:12.265] Chain ID:  6382 (unknown)
+INFO [04-29|15:08:12.265] Consensus: unknown
+INFO [04-29|15:08:12.265] 
+INFO [04-29|15:08:12.265] Pre-Merge hard forks (block based):
+INFO [04-29|15:08:12.265]  - Homestead:                   #0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/homestead.md)
+INFO [04-29|15:08:12.265]  - Tangerine Whistle (EIP 150): #0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/tangerine-whistle.md)
+INFO [04-29|15:08:12.265]  - Spurious Dragon/1 (EIP 155): #0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/spurious-dragon.md)
+INFO [04-29|15:08:12.265]  - Spurious Dragon/2 (EIP 158): #0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/spurious-dragon.md)
+INFO [04-29|15:08:12.265]  - Byzantium:                   #0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/byzantium.md)
+INFO [04-29|15:08:12.265]  - Constantinople:              #0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/constantinople.md)
+INFO [04-29|15:08:12.265]  - Petersburg:                  #0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/petersburg.md)
+INFO [04-29|15:08:12.265]  - Istanbul:                    #0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/istanbul.md)
+INFO [04-29|15:08:12.265]  - Muir Glacier:                #0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/muir-glacier.md)
+INFO [04-29|15:08:12.265]  - Berlin:                      #0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/berlin.md)
+INFO [04-29|15:08:12.265]  - London:                      #0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/london.md)
+INFO [04-29|15:08:12.265]  - Arrow Glacier:               #0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/arrow-glacier.md)
+INFO [04-29|15:08:12.265]  - Gray Glacier:                #0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/gray-glacier.md)
+INFO [04-29|15:08:12.265] 
+INFO [04-29|15:08:12.265] Merge configured:
+INFO [04-29|15:08:12.265]  - Hard-fork specification:    https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/paris.md
+INFO [04-29|15:08:12.265]  - Network known to be merged: true
+INFO [04-29|15:08:12.265]  - Total terminal difficulty:  0
+INFO [04-29|15:08:12.265] 
+INFO [04-29|15:08:12.265] Post-Merge hard forks (timestamp based):
+INFO [04-29|15:08:12.265]  - Shanghai:                    @1714370887 (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/shanghai.md)
+INFO [04-29|15:08:12.265]  - Cancun:                      @1714370887 (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/cancun.md)
+INFO [04-29|15:08:12.265] 
+INFO [04-29|15:08:12.265] ---------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO [04-29|15:08:12.265] 
+INFO [04-29|15:08:12.265] Loaded most recent local block           number=0 hash=0abacf..c4dcea td=1 age=5s
+WARN [04-29|15:08:12.265] Failed to load snapshot                  err="missing or corrupted snapshot"
+INFO [04-29|15:08:12.278] Rebuilding state snapshot
+INFO [04-29|15:08:12.285] Initialized transaction indexer          range="last 2350000 blocks"
+INFO [04-29|15:08:12.285] Resuming state snapshot generation       root=bba0e4..b7d240 accounts=0 slots=0 storage=0.00B dangling=0 elapsed=6.277ms
+INFO [04-29|15:08:12.291] Generated state snapshot                 accounts=4 slots=0 storage=236.00B dangling=0 elapsed=13.131ms
+INFO [04-29|15:08:12.481] Gasprice oracle is ignoring threshold set threshold=2
+WARN [04-29|15:08:12.487] Engine API enabled                       protocol=eth
+INFO [04-29|15:08:12.487] Starting peer-to-peer node               instance=Geth/node-0/v1.14.0-unstable-9dcf8aae-20240410/linux-amd64/go1.21.0
+INFO [04-29|15:08:12.516] New local node record                    seq=1,714,370,892,516 id=c9b518dc643b4e9e ip=127.0.0.1 udp=8400 tcp=8400
+INFO [04-29|15:08:12.517] Started P2P networking                   self=enode://9067a03e56e1914713e541ac56b71345dd5a81cce56f819df5dc856c9eed7143e154c96f6b876936002a2d09a02024e597424a976a0158bd9ad7ffad0c5956fc@127.0.0.1:8400
+INFO [04-29|15:08:12.518] IPC endpoint opened                      url=/home/gnc/github/testnet/network/node-0/execution/geth.ipc
+INFO [04-29|15:08:12.518] Generated JWT secret                     path=network/node-0/execution/jwtsecret
+INFO [04-29|15:08:12.518] HTTP server started                      endpoint=127.0.0.1:8000 auth=false prefix= cors=* vhosts=localhost
+INFO [04-29|15:08:12.518] WebSocket enabled                        url=ws://127.0.0.1:8100
+INFO [04-29|15:08:12.518] WebSocket enabled                        url=ws://127.0.0.1:8200
+INFO [04-29|15:08:12.518] HTTP server started                      endpoint=127.0.0.1:8200 auth=true  prefix= cors=localhost vhosts=*
+INFO [04-29|15:08:19.068] Starting work on payload                 id=0x0396ad3a803a94e0
+INFO [04-29|15:08:19.068] Updated payload                          id=0x0396ad3a803a94e0 number=1 hash=3bc896..82930f txs=0 withdrawals=0 gas=0 fees=0 root=bba0e4..b7d240 elapsed="89.699µs"
+INFO [04-29|15:08:19.069] Stopping work on payload                 id=0x0396ad3a803a94e0 reason=delivery
+INFO [04-29|15:08:22.539] Looking for peers                        peercount=2 tried=1 static=0
+INFO [04-29|15:08:27.347] Imported new potential chain segment     number=1 hash=3bc896..82930f blocks=1 txs=0 mgas=0.000 elapsed=3.793ms    mgasps=0.000 triedirty=0.00B
+INFO [04-29|15:08:29.004] Chain head was updated                   number=1 hash=3bc896..82930f root=bba0e4..b7d240 elapsed=3.608758ms
+INFO [04-29|15:08:29.004] Starting work on payload                 id=0x032875ef2fba229f
+ERROR[04-29|15:08:29.004] Nil finalized block cannot evict old blobs
+INFO [04-29|15:08:29.004] Updated payload                          id=0x032875ef2fba229f number=2 hash=e02a4d..8d9b48 txs=0 withdrawals=0 gas=0 fees=0 root=bba0e4..b7d240 elapsed="48.135µs"
+INFO [04-29|15:08:29.008] Indexed transactions                     blocks=2 txs=0 tail=0 elapsed=3.519ms
+INFO [04-29|15:08:31.054] Stopping work on payload                 id=0x032875ef2fba229f reason=delivery
+INFO [04-29|15:08:31.066] Imported new potential chain segment     number=2 hash=e02a4d..8d9b48 blocks=1 txs=0 mgas=0.000 elapsed=3.480ms    mgasps=0.000 triedirty=0.00B
+INFO [04-29|15:08:31.079] Chain head was updated                   number=2 hash=e02a4d..8d9b48 root=bba0e4..b7d240 elapsed=3.169775ms
+ERROR[04-29|15:08:31.079] Nil finalized block cannot evict old blobs
+INFO [04-29|15:08:32.554] Looking for peers                        peercount=2 tried=0 static=0
+INFO [04-29|15:08:42.568] Looking for peers                        peercount=2 tried=0 static=0
+INFO [04-29|15:08:43.087] Imported new potential chain segment     number=1 hash=8df9b5..007858 blocks=1 txs=0 mgas=0.000 elapsed=4.033ms    mgasps=0.000 triedirty=0.00B
+INFO [04-29|15:08:43.111] Chain reorg detected                     number=0 hash=0abacf..c4dcea drop=2 dropfrom=e02a4d..8d9b48 add=1 addfrom=8df9b5..007858
+INFO [04-29|15:08:43.123] Chain head was updated                   number=1 hash=8df9b5..007858 root=bba0e4..b7d240 elapsed=11.976073ms
+ERROR[04-29|15:08:43.123] Nil finalized block cannot evict old blobs
+INFO [04-29|15:08:52.582] Looking for peers                        peercount=2 tried=0 static=0
+INFO [04-29|15:08:55.103] Imported new potential chain segment     number=2 hash=d79a8a..e2c584 blocks=1 txs=0 mgas=0.000 elapsed=5.060ms     mgasps=0.000 triedirty=0.00B
+INFO [04-29|15:08:55.115] Chain head was updated                   number=2 hash=d79a8a..e2c584 root=bba0e4..b7d240 elapsed=7.01712ms
+ERROR[04-29|15:08:55.116] Nil finalized block cannot evict old blobs
+INFO [04-29|15:09:02.597] Looking for peers                        peercount=2 tried=0 static=0
+INFO [04-29|15:09:07.097] Imported new potential chain segment     number=3 hash=4b0599..574a7b blocks=1 txs=0 mgas=0.000 elapsed=4.181ms     mgasps=0.000 triedirty=0.00B
+INFO [04-29|15:09:07.118] Chain head was updated                   number=3 hash=4b0599..574a7b root=bba0e4..b7d240 elapsed=6.065126ms
+ERROR[04-29|15:09:07.119] Nil finalized block cannot evict old blobs
+INFO [04-29|15:09:07.133] Starting work on payload                 id=0x0327ad8b1108f144
+INFO [04-29|15:09:07.133] Updated payload                          id=0x0327ad8b1108f144 number=4 hash=196a65..cc298c txs=0 withdrawals=0 gas=0 fees=0 root=bba0e4..b7d240 elapsed="48.093µs"
+INFO [04-29|15:09:12.611] Looking for peers                        peercount=2 tried=0 static=0
+INFO [04-29|15:09:19.098] Stopping work on payload                 id=0x0327ad8b1108f144 reason=delivery
+INFO [04-29|15:09:19.109] Imported new potential chain segment     number=4 hash=196a65..cc298c blocks=1 txs=0 mgas=0.000 elapsed=3.318ms     mgasps=0.000 triedirty=0.00B
+INFO [04-29|15:09:19.132] Chain head was updated                   number=4 hash=196a65..cc298c root=bba0e4..b7d240 elapsed=4.623961ms
+ERROR[04-29|15:09:19.132] Nil finalized block cannot evict old blobs
+INFO [04-29|15:09:22.626] Looking for peers                        peercount=2 tried=0 static=0
+INFO [04-29|15:09:31.099] Imported new potential chain segment     number=5 hash=14db8d..4f1c7f blocks=1 txs=0 mgas=0.000 elapsed=4.742ms     mgasps=0.000 triedirty=0.00B
+INFO [04-29|15:09:31.112] Chain head was updated                   number=5 hash=14db8d..4f1c7f root=bba0e4..b7d240 elapsed=5.735511ms
+ERROR[04-29|15:09:31.112] Nil finalized block cannot evict old blobs
+INFO [04-29|15:09:32.638] Looking for peers                        peercount=2 tried=0 static=0
+INFO [04-29|15:09:42.652] Looking for peers                        peercount=2 tried=0 static=0
+INFO [04-29|15:09:43.097] Imported new potential chain segment     number=6 hash=a9d40e..e59fe1 blocks=1 txs=0 mgas=0.000 elapsed=4.572ms     mgasps=0.000 triedirty=0.00B
+INFO [04-29|15:09:43.110] Chain head was updated                   number=6 hash=a9d40e..e59fe1 root=bba0e4..b7d240 elapsed=5.451381ms
+ERROR[04-29|15:09:43.110] Nil finalized block cannot evict old blobs
+INFO [04-29|15:09:43.120] Starting work on payload                 id=0x0325086987009bee
+INFO [04-29|15:09:43.120] Updated payload                          id=0x0325086987009bee number=7 hash=d1661e..bf791c txs=0 withdrawals=0 gas=0 fees=0 root=bba0e4..b7d240 elapsed="57.112µs"
+INFO [04-29|15:09:52.664] Looking for peers                        peercount=2 tried=0 static=0
+INFO [04-29|15:09:52.786] Got interrupt, shutting down...
+INFO [04-29|15:09:52.787] HTTP server stopped                      endpoint=127.0.0.1:8000
+INFO [04-29|15:09:52.787] HTTP server stopped                      endpoint=127.0.0.1:8100
+INFO [04-29|15:09:52.787] HTTP server stopped                      endpoint=127.0.0.1:8200
+INFO [04-29|15:09:52.787] IPC endpoint closed                      url=/home/gnc/github/testnet/network/node-0/execution/geth.ipc
+INFO [04-29|15:09:52.787] Ethereum protocol stopped
+INFO [04-29|15:09:52.787] Transaction pool stopped
+INFO [04-29|15:09:52.992] Persisting dirty state to disk           root=bba0e4..b7d240 layers=0
+INFO [04-29|15:09:52.998] Persisted dirty state to disk            size=69.00B elapsed=5.750ms
+INFO [04-29|15:09:53.068] Blockchain stopped
