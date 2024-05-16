@@ -3,11 +3,9 @@
 # NETWORK_DIR is where all files for the testnet will be stored,
 # including logs and storage
 CONFIG_DIR=./config
+mkdir -p ${CONFIG_DIR}
 NETWORK_DIR=./network
-
-# Change this number for your desired number of nodes
-NUM_NODES=3
-
+mkdir -p ${NETWORK_DIR}
 # Port information. All ports will be incremented upon
 # with more validators to prevent port conflicts on a single machine
 GETH_BOOTNODE_PORT=30301
@@ -41,6 +39,8 @@ PRYSM_VALIDATOR_BINARY=./dependencies/prysm_v4.2.1/bazel-bin/cmd/validator/valid
 # node is the bootstrap node. This is used for consensus client discovery
 PRYSM_BOOTSTRAP_NODE=
 
-# Calculate how many nodes to wait for to be in sync with. Not a hard rule
-MIN_SYNC_PEERS=$((${NUM_NODES}/2))
-echo ${MIN_SYNC_PEERS} is minimum number of synced peers required
+# Get the ENODE from the first line of the logs for the bootnode
+bootnode_enode=""
+function get_bootnode_enode() {
+	bootnode_enode=$(head -n 1 ${NETWORK_DIR}/bootnode/bootnode.log)
+}

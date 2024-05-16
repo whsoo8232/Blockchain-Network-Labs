@@ -1,8 +1,5 @@
 #!/bin/bash
 
-#set -exu
-#set -o pipefail
-
 # Check if jq is installed
 if ! command -v jq &> /dev/null; then
     echo "Error: jq is not installed. Please install jq first."
@@ -14,35 +11,9 @@ if ! command -v curl &> /dev/null; then
     exit 1
 fi
 
+
 . ./0_setting.sh
 
-
-# Create the bootnode for execution client peer discovery. 
-# Not a production grade bootnode. Does not do peer discovery for consensus client
-mkdir -p ${NETWORK_DIR}/bootnode
-
-${GETH_BOOTNODE_BINARY} -genkey ${NETWORK_DIR}/bootnode/nodekey
-
-#${GETH_BOOTNODE_BINARY} \
-#    -nodekey ${NETWORK_DIR}/bootnode/nodekey \
-#    -addr=:${GETH_BOOTNODE_PORT} \
-#    -verbosity=5 > "${NETWORK_DIR}/bootnode/bootnode.log" 2>&1 &
-
-#sleep 2
-## Get the ENODE from the first line of the logs for the bootnode
-#bootnode_enode=$(head -n 1 ${NETWORK_DIR}/bootnode/bootnode.log)
-## Check if the line begins with "enode"
-#if [[ "${bootnode_enode}" == enode* ]]; then
-#    echo "bootnode enode is: ${bootnode_enode}"
-#else
-#    echo "The bootnode enode was not found. Exiting."
-#    exit 1
-#fi
-
-./bin/startboot.sh
-if [ "$?" != "0" ]; then
-	exit 1
-fi
 
 # Generate the genesis. This will generate validators based
 # on https://github.com/ethereum/eth2.0-pm/blob/a085c9870f3956d6228ed2a40cd37f0c6580ecd7/interop/mocked_start/README.md
@@ -87,7 +58,7 @@ for (( i=0; i<${NUM_NODES}; i++ )); do
     NODE_DIR=${NETWORK_DIR}/node-${i}
     # Start geth execution client for this node
     ${GETH_BINARY} \
-      --networkid=${CHAIN_ID:-6832} \
+      --networkid=${CHAIN_ID:-11005} \
       --http \
       --http.api=eth,net,web3 \
       --http.addr=127.0.0.1 \
@@ -127,7 +98,7 @@ for (( i=0; i<${NUM_NODES}; i++ )); do
         --interop-eth1data-votes \
         --chain-config-file=${NODE_DIR}/consensus/config.yml \
         --contract-deployment-block=0 \
-        --chain-id=${CHAIN_ID:-6832} \
+        --chain-id=${CHAIN_ID:-11005} \
         --rpc-host=127.0.0.1 \
         --rpc-port=$((${PRYSM_BEACON_RPC_PORT} + ${i})) \
         --grpc-gateway-host=127.0.0.1 \
