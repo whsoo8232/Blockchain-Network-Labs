@@ -1,11 +1,13 @@
 #!/bin/bash
 
+NUM_NODES=0
+
 # NETWORK_DIR is where all files for the testnet will be stored,
 # including logs and storage
 CONFIG_DIR=config
-mkdir -p ../${CONFIG_DIR}
 NETWORK_DIR=network
-mkdir -p ../${NETWORK_DIR}
+BOOTNODE_DIR=bootnode
+
 # Port information. All ports will be incremented upon
 # with more validators to prevent port conflicts on a single machine
 GETH_BOOTNODE_PORT=30301
