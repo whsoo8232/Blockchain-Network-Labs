@@ -22,3 +22,17 @@ Install deposit cli in https://github.com/ethereum/staking-deposit-cli/releases
 Contain "deposit_data-.json" - contains deposit data that you’ll later upload to the Ethereum launchpad & "keystore-m_.json" - contains your public key and encrypted private key.  
 To set different folder for Validator keys  
 ./prysm.sh validator accounts import --keys-dir=<YOUR_FOLDER_PATH> --mainnet
+
+
+/// Configure beacon-chain  
+./prysm.sh beacon-chain --checkpoint-sync-url=http://localhost:3500 --genesis-beacon-api-url=http://localhost:3500
+
+
+# Gits  
+### go-ethereum
+https://github.com/ethereum/go-ethereum.git
+#### docs  
+### prysm
+https://github.com/prysmaticlabs/prysm.git
+#### docs
+https://docs.prylabs.network/docs/install/install-with-script
