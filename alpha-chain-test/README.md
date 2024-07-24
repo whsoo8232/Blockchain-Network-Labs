@@ -1,10 +1,45 @@
-# bootnode generate script build done
-/// enode bootnode-enode.txt에 저장 > save "enode" to peer(node)
+# Geth console command
+- geth attach --exec admin.nodeInfo.enr data/geth.ipc / get bootnode node record / return enr
+- net.peerCount / get peer count
+- net.peerCount /  get detail peer status
 
-# node 생성
-/// Validator
-/// beacon?
+# Prysm Quickstart Guide
+/// Make node folder // mkdir consensus & execution
 
-# node는 각각 생성
-# 각 node 별 console 실행 sh 생성, port 저장 및 enode 저장
-# reboot 시, 저장된 port로 실행, 다른 node 연결(enode db), 다른 노드들 또한 현 노드의 enode 로 peer 연결  
+/// Install geth
+
+/// Get prysm.sh in consensus file  
+curl https://raw.githubusercontent.com/prysmaticlabs/prysm/master/prysm.sh --output prysm.sh && chmod +x prysm.sh
+
+/// Get jwt.hex on node folder // jwt.hex is key for link beaconchain used http ports  
+./prysm.sh beacon-chain generate-auth-secret
+
+/// Run an execution client on execution folder  
+geth --mainnet --http --http.api eth,net,engine,admin --authrpc.jwtsecret=<PATH_TO_JWT_FILE>
+
+/// Run a Beaconnode  
+./prysm.sh beacon-chain --execution-endpoint=http://localhost:8551 --mainnet --jwt-secret=<PATH_TO_JWT_FILE> --checkpoint-sync-url=https://beaconstate.info --genesis-beacon-api-url=https://beaconstate.info
+
+/// Run a Validator   
+Install deposit cli in https://github.com/ethereum/staking-deposit-cli/releases  
+./deposit new-mnemonic --num_validators=1 --mnemonic_language=english --chain=mainnet  
+// validator key folder  
+Contain "deposit_data-.json" - contains deposit data that you’ll later upload to the Ethereum launchpad & "keystore-m_.json" - contains your public key and encrypted private key.  
+To set different folder for Validator keys  
+./prysm.sh validator accounts import --keys-dir=<YOUR_FOLDER_PATH> --mainnet
+
+
+/// Configure beacon-chain  
+./prysm.sh beacon-chain --checkpoint-sync-url=http://localhost:3500 --genesis-beacon-api-url=http://localhost:3500
+
+
+# Gits  
+### go-ethereum
+https://github.com/ethereum/go-ethereum.git
+#### docs  
+https://geth.ethereum.org/docs/fundamentals/private-network
+### prysm
+https://github.com/prysmaticlabs/prysm.git
+#### docs
+https://docs.prylabs.network/docs/install/install-with-script
+

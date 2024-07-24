@@ -1,14 +1,15 @@
-. ./setting.sh
+#!/bin/bash
 
+. ./setting.sh
 
 # Create the bootnode for execution client peer discovery. 
 # Not a production grade bootnode. Does not do peer discovery for consensus client
 mkdir -p ../${NETWORK_DIR}/${BOOTNODE_DIR}
 
-${GETH_BOOTNODE_BINARY} -genkey ../${NETWORK_DIR}/${BOOTNODE_DIR}/nodekey
+${GETH_BOOTNODE_BINARY} -genkey ../${NETWORK_DIR}/${BOOTNODE_DIR}/boot.key
 
 nohup ${GETH_BOOTNODE_BINARY} \
-    -nodekey ../${NETWORK_DIR}/${BOOTNODE_DIR}/nodekey \
+    -nodekey ../${NETWORK_DIR}/${BOOTNODE_DIR}/boot.key \
     -addr=:${GETH_BOOTNODE_PORT} \
     -verbosity=5 > "../${NETWORK_DIR}/${BOOTNODE_DIR}/bootnode.log" 2>&1 &
 

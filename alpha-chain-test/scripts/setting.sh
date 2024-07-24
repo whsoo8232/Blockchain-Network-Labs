@@ -1,5 +1,7 @@
 #!/bin/bash
 
+CHAINID=11005
+
 NUM_NODES=0
 
 # NETWORK_DIR is where all files for the testnet will be stored,
@@ -28,14 +30,16 @@ PRYSM_VALIDATOR_RPC_PORT=7000
 PRYSM_VALIDATOR_GRPC_GATEWAY_PORT=7100
 PRYSM_VALIDATOR_MONITORING_PORT=7200
 
-# Set Paths for your binaries. Configure as you wish, particularly
-# if you're developing on a local fork of geth/prysm
-GETH_BINARY=../dependencies/go-ethereum_v1.13.12/build/bin/geth
-GETH_BOOTNODE_BINARY=../dependencies/go-ethereum_v1.13.12/build/bin/bootnode
+#install geth with golang
+GETH_BINARY=geth
+GETH_BOOTNODE_BINARY=bootnode
 
-PRYSM_CTL_BINARY=../dependencies/prysm_v4.2.1/bazel-bin/cmd/prysmctl/prysmctl_/prysmctl
-PRYSM_BEACON_BINARY=../dependencies/prysm_v4.2.1/bazel-bin/cmd/beacon-chain/beacon-chain_/beacon-chain
-PRYSM_VALIDATOR_BINARY=../dependencies/prysm_v4.2.1/bazel-bin/cmd/validator/validator_/validator
+PRYSM_CTL_BINARY=../dependencies/prysmctl
+PRYSM_BEACON_BINARY=../dependencies/beacon-chain
+PRYSM_VALIDATOR_BINARY=../dependencies/validator
+
+
+MIN_SYNC_PEERS=$((NUM_NODES/2))
 
 # The prysm bootstrap node is set after the first loop, as the first
 # node is the bootstrap node. This is used for consensus client discovery

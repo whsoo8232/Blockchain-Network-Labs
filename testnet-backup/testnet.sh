@@ -108,7 +108,7 @@ $PRYSM_CTL_BINARY testnet generate-genesis \
 PRYSM_BOOTSTRAP_NODE=
 
 # Calculate how many nodes to wait for to be in sync with. Not a hard rule
-MIN_SYNC_PEERS=$((NUM_NODES/3))
+IN_SYNC_PEERS=$((NUM_NODES/3))
 echo $MIN_SYNC_PEERS is minimum number of synced peers required
 
 # Create the validators in a loop

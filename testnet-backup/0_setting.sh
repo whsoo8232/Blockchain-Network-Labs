@@ -42,5 +42,5 @@ PRYSM_VALIDATOR_BINARY=./dependencies/prysm_v4.2.1/bazel-bin/cmd/validator/valid
 PRYSM_BOOTSTRAP_NODE=
 
 # Calculate how many nodes to wait for to be in sync with. Not a hard rule
-MIN_SYNC_PEERS=$((${NUM_NODES}/2))
+IN_SYNC_PEERS=$((${NUM_NODES}/2))
 echo ${MIN_SYNC_PEERS} is minimum number of synced peers required

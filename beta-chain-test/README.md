@@ -1,3 +1,11 @@
+# To do
+- prysm bootnode 분리 maybe geth bootnode file과 통합
+
+# Geth console command
+- geth attach --exec admin.nodeInfo.enr data/geth.ipc // get bootnode node record // return enr
+- net.peerCount / get peer count
+- net.peerCount /  get detail peer status
+
 # Prysm Quickstart Guide
 /// Make node folder // mkdir consensus & execution
 
@@ -32,7 +40,9 @@ To set different folder for Validator keys
 ### go-ethereum
 https://github.com/ethereum/go-ethereum.git
 #### docs  
+https://geth.ethereum.org/docs/fundamentals/private-network
 ### prysm
 https://github.com/prysmaticlabs/prysm.git
 #### docs
 https://docs.prylabs.network/docs/install/install-with-script
+

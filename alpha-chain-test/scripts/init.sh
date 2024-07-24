@@ -16,9 +16,9 @@ mkdir -p ../${CONFIG_DIR}
 mkdir -p ../${NETWORK_DIR}
 
 
-PRYSM_CTL_BINARY testnet generate-genesis \
+${PRYSM_CTL_BINARY} testnet generate-genesis \
     --fork=deneb \
-    --num-validators=0 \
+    --num-validators=10 \
     --chain-config-file=../config.yml \
     --geth-genesis-json-in=../genesis.json \
     --output-ssz=../${NETWORK_DIR}/genesis.ssz \
